@@ -1,0 +1,23 @@
+Prerequisites:
+* Node.js v6.10.2
+* npm 3.10.10
+
+Setup:
+* npm install
+* Update the configuration:
+    * setenv.sh
+* Update commands.yml
+    * command name: console command
+
+Run:
+* . setenv.sh
+* node server.js
+* Open on a web browser: http://localhost:<port>
+    * Use the interface to send commands to the server
+    * Observe the server's reply
+
+Limitations:
+* Does not work on Windows
+
+Improvements:
+* Design UI

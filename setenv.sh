@@ -1,0 +1,5 @@
+export SERIAL_PORT_ENABLED=false
+export SERIAL_FILTER_COMMANDS=true
+export SERIAL_PORT="/dev/ttyUSB0"
+export SERIAL_BAUD_RATE=57600
+export SERVER_PORT=3000

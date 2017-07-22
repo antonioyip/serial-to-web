@@ -1,0 +1,18 @@
+{
+  "name": "serialapp",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "js-yaml": "^3.8.4",
+    "serialport": "^4.0.7",
+    "socket.io": "^1.7.4"
+  },
+  "devDependencies": {},
+  "description": ""
+}
