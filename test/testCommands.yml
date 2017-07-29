@@ -1,0 +1,4 @@
+list: ls -l
+ifconfig: ifconfig
+go_home: cd ~
+go_root: cd /

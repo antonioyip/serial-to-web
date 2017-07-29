@@ -5,8 +5,8 @@ console.log('Filtering by commands')
 
 var commandsMap = {}
 
-var init = function() {
-    var data = fs.readFileSync('commands.yml', 'utf8')
+var init = function(filename) {
+    var data = fs.readFileSync(filename, 'utf8')
 
     yaml.safeLoadAll(data, function (doc) {
         // Object.keys(doc).forEach((key) => {
@@ -17,7 +17,7 @@ var init = function() {
 }
 
 var toString = function() {
-    return Object.keys(commandsMap)
+    return JSON.stringify(commandsMap)
 }
 
 var isValid = function(com) {
@@ -25,7 +25,7 @@ var isValid = function(com) {
 }
 
 var translate = function(com) {
-    return commandsMap[com]
+    return commandsMap[com] ? commandsMap[com] : ''
 }
 
 module.exports = {

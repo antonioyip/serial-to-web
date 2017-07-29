@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html')
 })
 
-commands.init()
+commands.init('commands.yml')
 io.on('connection', (socket) => {
     // report available commands
     io.emit('serial message', 'Valid commands: ' + commands.toString())
